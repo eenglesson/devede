@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(224, 255, 255, 0.664);
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 20px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 2px 15px lightgray;
+}
+
+.search-section h1 {
+  font-family: josefin sans;
+  position: absolute;
+  font-size: 35px;
+  font-weight: bolder;
+  left: 20px;
+  top: 20px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(209, 0, 255, 1) 10%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input::placeholder {
+  color: rgb(66, 198, 241);
+}
+input:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgb(133, 220, 249);
+}
+
+.search-container input {
+  background-color: rgba(153, 230, 255, 0.174);
+  border-radius: 8px;
+  color: rgb(32, 32, 32);
+  border-style: solid;
+  border-color: none;
+  width: 300px;
+  padding: 4px 4px;
+  font-weight: 400;
+  font-size: 16px;
+  border-color: rgb(133, 220, 249);
+  font-family: josefin sans;
+  letter-spacing: 1px;
+}
+
+.search-container button {
+  background-color: rgba(153, 230, 255, 0.174);
+  border-radius: 8px;
+  color: rgb(66, 198, 241);
+  border-style: solid;
+  border-color: none;
+  font-family: josefin sans;
+  padding: 4px 4px;
+  font-size: 16px;
+  transition: 0.6s;
+  scale: 1;
+  cursor: pointer;
+  margin-left: 10px;
+  border-color: rgb(133, 220, 249);
+}
+
+.search-container button:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 5px rgb(133, 220, 249);
+}
+
+.movie-display-section {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 2px 15px lightgray;
+}
+
+.movie-display-section h2 {
+  padding: 4px 4px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: josefin sans;
+  font-weight: 600;
+}
+
+.movie-display-section h3 {
+  padding: 4px 4px;
+  font-size: 11px;
+  font-family: josefin sans;
+  color: rgb(66, 198, 241);
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: -8px;
+  letter-spacing: 1px;
+}
+
+.movie-display-section p {
+  padding: 4px 4px;
+  font-size: 16px;
+}
+
+.movie-display-section button {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+  background-color: rgba(153, 230, 255, 0.174);
+  border-radius: 8px;
+  font-family: josefin sans;
+  color: rgb(66, 198, 241);
+  border-style: solid;
+  border-color: none;
+  padding: 4px 4px;
+  font-size: 12px;
+  cursor: pointer;
+  border-color: rgb(133, 220, 249);
+  letter-spacing: 2px;
+}
+
+.movie-display-section button:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 5px rgb(133, 220, 249);
+}
+
+.add-movie-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 2px 15px lightgray;
+}
+.add-movie-section h2 {
+  font-family: josefin sans;
+  background-image: linear-gradient(
+    90deg,
+    rgba(209, 0, 255, 1) 10%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#movie-search-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+#movie-title-add {
+  background-color: rgba(153, 230, 255, 0.174);
+  border-radius: 8px;
+  color: rgb(32, 32, 32);
+  border-style: solid;
+  border-color: none;
+  padding: 4px 4px;
+  font-weight: 400;
+  font-size: 16px;
+  border-color: rgb(133, 220, 249);
+  height: 16px;
+  font-family: josefin sans;
+  letter-spacing: 1px;
+}
+
+#movie-genre-add {
+  background-color: rgba(153, 230, 255, 0.174);
+  border-radius: 8px;
+  color: rgb(32, 32, 32);
+  border-style: solid;
+  border-color: none;
+  height: 16px;
+  padding: 4px 4px;
+  font-weight: 400;
+  font-size: 16px;
+  border-color: rgb(133, 220, 249);
+  font-family: josefin sans;
+  letter-spacing: 1px;
+}
+
+#release-date-add {
+  background-color: rgba(153, 230, 255, 0.174);
+  border-radius: 8px;
+  color: rgb(66, 198, 241);
+  border-style: solid;
+  border-color: none;
+  padding: 4px 4px;
+  font-weight: 400;
+  font-size: 16px;
+  border-color: rgb(133, 220, 249);
+  height: 16px;
+  cursor: pointer;
+  font-family: josefin sans;
+  letter-spacing: 1px;
+}
+
+#movie-add-list {
+  background-color: rgba(153, 230, 255, 0.174);
+  border-radius: 8px;
+  color: rgb(66, 198, 241);
+  border-style: solid;
+  border-color: none;
+  padding: 4px 4px;
+  font-weight: 400;
+  font-size: 16px;
+  border-color: rgb(133, 220, 249);
+  height: 28px;
+  cursor: pointer;
+  font-family: josefin sans;
+  transition: 0.6s;
+  scale: 1;
+}
+
+#movie-add-list:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 5px rgb(133, 220, 249);
+}
+
+#info {
+  font-family: josefin sans;
+  margin: 20px 0;
+  opacity: 0.5;
+  font-style: italic;
+}
